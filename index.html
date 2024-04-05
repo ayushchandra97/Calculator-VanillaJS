@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 data-heading>Simple Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="calculator-container">
+            <div id="display">
+                <div id="previous-operand" data-previous-operand></div>
+                <div id="current-operand" data-current-operand></div>
+            </div>
+            <button data-toggle-btn class="toggle"><img src="app-closed.png" alt="app-closed"></button>
+            <button data-swap class="hidden"><img src="swap.png" alt="swap"></button>
+            <button data-root class="hidden">√</button>
+            <button data-all-clear>AC</button>
+            <button data-clear>DEL</button>
+            <button data-operator>&divide;</button>
+            <button data-deg-rad class="hidden">rad</button>
+            <button data-trig class="hidden">sin</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operator>&times;</button>
+            <button data-trig class="hidden">cos</button>
+            <button data-trig class="hidden">tan</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operator>-</button>
+            <button data-operator class="hidden">x<sup>y</sup></button>
+            <button data-natural-log class="hidden">ln</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operator>+</button>
+            <button data-log-base-ten class="hidden">log</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-percent>%</button>
+            <button data-equality>=</button>
+        </div>
+    </div>
+    <footer id="main-footer">
+        <p>Made By <a href="http://github.com/ayushchandra97" target="_blank">Ayush Chandra</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

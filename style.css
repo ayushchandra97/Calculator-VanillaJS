@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(121deg, #ebc883, #a5835a);
+    min-height: 100dvh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: repeat(4, 6.75rem);
+    grid-template-rows: minmax(6rem, auto)  repeat(5, 6.75rem);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    padding: 10px;
+    grid-column: 1 / -1;
+    background-color: rgba(39, 33, 33, 0.7);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#previous-operand {
+    color: rgb(255 255 255 / 0.75);
+    font-size: 1.5rem;
+}
+
+#current-operand {
+    color: rgb(255 255 255);
+    font-size: 2.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.calculator-container button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(228 193 147);
+    border: 1px solid rgb(233, 230, 230);
+    outline: none;
+    cursor: pointer;
+}
+
+.calculator-container button:hover {
+    background-color: rgb(225 177 131);
+}
+
+.calculator-container button:active {
+    background-color: rgb(222 156 92);
+}
+
+img {
+    width: 1.5rem;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    z-index: 1;
+}
+
+.expanded {
+    grid-template-columns: repeat(6, 6rem);
+    grid-template-rows: minmax(6rem, auto)  repeat(5, 6rem);
+}
+
+#main-header {
+    height: 5rem;
+    background-color: #574938;
+    color: white;
+}
+
+#main-header > h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#main-footer {
+    font-size: 2.5rem;
+    height: 5rem;
+    background-color: #574938;
+    color: white;
+}
+
+#main-footer > p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#main-footer > p > a {
+    text-decoration: none;
+    color: #E4C193;
+}
+
+#main-footer > p > a:hover {
+    text-decoration: underline;
+} 
