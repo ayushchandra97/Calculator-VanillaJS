@@ -6,11 +6,14 @@
 }
 
 body {
-    background: linear-gradient(121deg, #ebc883, #a5835a);
+    background: linear-gradient(180deg, #bbb8b4, #af8756);
     min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
